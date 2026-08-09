@@ -1,0 +1,22 @@
+name: Crowdin Sync
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Synchronize with Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          download_translations: true
+          localization_branch_name: main
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
