@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">企业事件示例</string>
+    <string name="device_admin_label">企业设备管理</string>
+    <string name="device_admin_description">用于已获授权的企业设备管理注册。</string>
+    <string name="device_admin_enabled">企业设备管理已启用</string>
+    <string name="device_admin_disabled">企业设备管理已停用</string>
+</resources>
