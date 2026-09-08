@@ -1,0 +1,20 @@
+{
+  "name": "robot-fish",
+  "install": "npm install --prefix src/backend && npm install --prefix src/frontend",
+  "terminals": [
+    {
+      "name": "backend",
+      "command": "cd src/backend && npm start",
+      "description": "Express API server on http://localhost:3001 (GitHub OAuth routes under /auth)."
+    },
+    {
+      "name": "frontend",
+      "command": "cd src/frontend && npm run dev -- --host",
+      "description": "Vite dev server for the React frontend on http://localhost:5173."
+    }
+  ],
+  "ports": [
+    { "name": "backend", "port": 3001 },
+    { "name": "frontend", "port": 5173 }
+  ]
+}
