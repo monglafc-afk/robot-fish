@@ -1,0 +1,19 @@
+{
+  "name": "device-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Device data sync and command scheduling backend (Express + Socket.io, MongoDB with in-memory fallback)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "mongodb": "^6.3.0",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.0"
+  }
+}
